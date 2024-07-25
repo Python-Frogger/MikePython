@@ -10,6 +10,10 @@ pygame.joystick.init()
 # Get the number of joysticks
 num_joysticks = pygame.joystick.get_count()
 
+score = 0
+
+font = pygame.font.Font(None, 36)
+
 # Check if there are any joysticks
 if num_joysticks > 0:
     # Get the first joystick
@@ -46,6 +50,9 @@ WHITE = (255, 255, 255)
 # hide mouse cursor
 pygame.mouse.set_visible(False)
 
+spawned_obstacle = False
+obstacles = []
+
 # draw rectangle
 rect_width = 40
 rect_height = 80
@@ -57,12 +64,42 @@ initial_jump_force = 0.25
 force = 0
 is_jumping = False
 colour = GREEN
-
 # game loop
 run = True
 while run:
     # fill screen with black
     screen.fill(BG)
+
+    #draw obstacles randomly
+    if not spawned_obstacle:
+        obstacle_width = 40
+        obstacle_height = 40
+        obstacle_x = SCREEN_WIDTH + random.randint(obstacle_width, SCREEN_WIDTH - obstacle_width)
+
+
+
+        if random.randint(1, 2) == 1:
+            obstacle_y = 315
+        else:
+            obstacle_y = 230
+
+
+
+
+        obstacles.append(pygame.Rect(obstacle_x, obstacle_y, obstacle_width, obstacle_height))
+        spawned_obstacle = True
+
+
+
+
+    #update obstacle positions
+    for obstacle in obstacles:
+        obstacle_x -= game_speed
+        if obstacle_x <= -obstacle_width:
+            obstacles.remove(obstacle)
+            score += 1
+            game_speed += 1/64
+            spawned_obstacle = False
 
     # plot two sprites side by side
     screen.blit(background_sprite, (background_x, background_y))
@@ -87,8 +124,17 @@ while run:
 
 
     pygame.draw.rect(screen, colour, (rect_x, rect_y, rect_width, rect_height))
+    for obstacle in obstacles:
+        pygame.draw.rect(screen, RED, (obstacle_x, obstacle_y, obstacle_width, obstacle_height))
 
+    player_rect = pygame.Rect(rect_x, rect_y, rect_width, rect_height)
+    obstacle_rect = pygame.Rect(obstacle_x, obstacle_y, obstacle_width, obstacle_height)
+    if player_rect.colliderect(obstacle_rect):
+        print("you lose")
+        pygame.time.delay(5000)
     # update display
+    score_surface = font.render(str(score), True, WHITE)
+    screen.blit(score_surface, (600, 10))
     pygame.display.flip()
 
     # handle events
