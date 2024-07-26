@@ -4,30 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MikePython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MikePython.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Mike pc at dads">
+      <change afterPath="$PROJECT_DIR$/Sprite rotation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jumpinggame.py" beforeDir="false" afterPath="$PROJECT_DIR$/jumpinggame.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Python-Frogger"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Python-Frogger&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/Python-Frogger/MikePython",
-    "accountId": "91ca630c-6ae6-41da-879b-3dae9b9cb161"
+    "accountId": "649e327e-d993-4fb8-b6dd-be962a6b5ce4"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -41,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Sprite rotation.executor": "Run",
     "Python.controller_game2.executor": "Run",
     "Python.jumpinggame.executor": "Run",
     "Python.sniperdog.executor": "Run",
@@ -68,6 +74,15 @@
       <option name="presentableId" value="Default" />
       <updated>1721576088772</updated>
     </task>
+    <task id="LOCAL-00001" summary="Mike pc at dads">
+      <option name="closed" value="true" />
+      <created>1721894809015</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721894809015</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,6 +95,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Mike pc at dads" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mike pc at dads" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
