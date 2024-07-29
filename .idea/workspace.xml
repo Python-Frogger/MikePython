@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Mike pc at dads">
-      <change afterPath="$PROJECT_DIR$/Sprite rotation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frogger game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +29,12 @@
     &quot;assignee&quot;: &quot;Python-Frogger&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Python-Frogger/MikePython",
-    "accountId": "649e327e-d993-4fb8-b6dd-be962a6b5ce4"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Python-Frogger/MikePython&quot;,
+    &quot;accountId&quot;: &quot;649e327e-d993-4fb8-b6dd-be962a6b5ce4&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -46,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.Frogger game.executor": "Run",
     "Python.Sprite rotation.executor": "Run",
     "Python.controller_game2.executor": "Run",
     "Python.jumpinggame.executor": "Run",
