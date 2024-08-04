@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Mike pc at dads">
+    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="uploading first time">
+      <change afterPath="$PROJECT_DIR$/blankgame.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snake 2p.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frogger game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Frogger game.py" afterDir="false" />
     </list>
@@ -50,16 +52,23 @@
     "Python.Sprite rotation.executor": "Run",
     "Python.controller_game2.executor": "Run",
     "Python.jumpinggame.executor": "Run",
+    "Python.snake 2p.executor": "Run",
     "Python.sniperdog.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/james/PycharmProjects/MikePython",
     "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\james\PycharmProjects\MikePython" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-975db3bf15a3-31b6be0877a2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.18034.82" />
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
       </set>
     </attachedChunks>
   </component>
@@ -115,6 +124,11 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/jumpinggame.py</url>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Sprite rotation.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

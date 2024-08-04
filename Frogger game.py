@@ -146,6 +146,7 @@ while running:
             print("you got run over!")
             running = False
     end_position_rect = pygame.Rect(end_position_x, end_position_y, end_position_width, end_position_height)
+
     if player_rect.colliderect(end_position_rect):
         print("you made it!")
         running = False
