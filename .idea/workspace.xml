@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Xmas update" />
+    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Xmas update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullet1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/bullet1.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bulletbounce.py" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/bulletbounce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/death1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/death1.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hurt1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/hurt1.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicelectro.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/musicelectro.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicinstrumental.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/musicinstrumental.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicrock.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/musicrock.mp3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,27 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Frogger game.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Space Invaders.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Sprite rotation.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bulletbounce.executor&quot;: &quot;Run&quot;,
-    &quot;Python.controller axis.executor&quot;: &quot;Run&quot;,
-    &quot;Python.controller_game2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.jumpinggame.executor&quot;: &quot;Run&quot;,
-    &quot;Python.leveleditor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.snake 2p.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sniperdog.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/james/PycharmProjects/MikePython&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Frogger game.executor": "Run",
+    "Python.Space Invaders.executor": "Run",
+    "Python.Sprite rotation.executor": "Run",
+    "Python.bulletbounce.executor": "Run",
+    "Python.controller axis.executor": "Run",
+    "Python.controller_game2.executor": "Run",
+    "Python.jumpinggame.executor": "Run",
+    "Python.leveleditor.executor": "Run",
+    "Python.snake 2p.executor": "Run",
+    "Python.sniperdog.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/james/PycharmProjects/MikePython/SquareOff",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\james\PycharmProjects\MikePython" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\james\PycharmProjects\MikePython\SquareOff" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -139,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734263134547</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Xmas update">
+      <option name="closed" value="true" />
+      <created>1734263329533</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734263329533</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
