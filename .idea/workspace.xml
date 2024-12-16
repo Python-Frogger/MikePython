@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Mike pc at dads">
-      <change afterPath="$PROJECT_DIR$/Frogger game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MikePython.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MikePython.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,18 +43,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Frogger game.executor": "Run",
-    "Python.Sprite rotation.executor": "Run",
-    "Python.controller_game2.executor": "Run",
-    "Python.jumpinggame.executor": "Run",
-    "Python.sniperdog.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Frogger game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Sprite rotation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.controller_game2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jumpinggame.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sniperdog.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
