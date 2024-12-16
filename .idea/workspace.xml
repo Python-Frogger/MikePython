@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Renamed python file">
-      <change afterPath="$PROJECT_DIR$/SquareOff/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlinetest/main.py" afterDir="false" />
+    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Xmas update&#10;&#10;(cherry picked from commit a422bb4fcca4773f8ddae6e41e040590481df447)">
+      <changelist_data name="Mike" email="michaelcarrick1234@gmail.com" date="1734364920000" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SquareOff/SquareOff.py" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SquareOff/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SquareOff/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -57,13 +59,19 @@
     "Python.jumpinggame.executor": "Run",
     "Python.leveleditor.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.scratch.executor": "Run",
     "Python.snake 2p.executor": "Run",
     "Python.sniperdog.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/james/PycharmProjects/MikePython/SquareOff",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+    "settings.editor.selected.configurable": "vcs.Git"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -73,6 +81,35 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\james\PycharmProjects\MikePython\SquareOff" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MikePython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scratch" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -173,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734265049209</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Renamed python file">
+      <option name="closed" value="true" />
+      <created>1735053218192</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735053218192</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,7 +238,8 @@
     <MESSAGE value="Xmas update" />
     <MESSAGE value="Moved directory" />
     <MESSAGE value="Renamed python file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed python file" />
+    <MESSAGE value="Xmas update&#10;&#10;(cherry picked from commit a422bb4fcca4773f8ddae6e41e040590481df447)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Xmas update&#10;&#10;(cherry picked from commit a422bb4fcca4773f8ddae6e41e040590481df447)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

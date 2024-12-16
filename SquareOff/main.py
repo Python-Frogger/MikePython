@@ -13,6 +13,8 @@ death1_sound = pygame.mixer.Sound('death1.ogg')
 hurt1_sound = pygame.mixer.Sound('hurt1.ogg')
 selection_music = pygame.mixer.Sound('musicinstrumental.ogg')
 game1_music = pygame.mixer.Sound('musicrock.ogg')
+title_screen = pygame.image.load('title_screen.png')
+
 
 joysticks = []
 try:
@@ -50,12 +52,12 @@ players = [
     {"x": 150, "y": 450,  "gun_x": 1, "gun_y": 0, "colour": GREEN, "js_num": 0, "gravity": 0.1, "y_speed": 0,
      "fire_rate": 500, "reload_speed": 1000, "time_last_shot_fired": 0, "max_bullets": 3, "current_bullets": 3, "is_reloading": False,
     "time_start_reload": 0, "health": 100, "jump_count": 1 , "jump_force": -4, "time_last_jumped": 0, "bullet_speed": 9, "bullet_gravity": 0.2,
-     "bullet_damage": 50, "speed": 2.5, "choice": False, "lives": 5, "powerup": True, "max_health": 100, "deaths": 0, "bullet_bounce" : 2 },
+     "bullet_damage": 50, "speed": 2.5, "choice": False, "lives": 5, "powerup": True, "max_health": 100, "deaths": 0, "bullet_bounce" : 2, "bullet_homing" : False},
     # player 2
     {"x": 500, "y": 450,  "gun_x": -1, "gun_y": 0, "colour": BLUE, "js_num": 1, "gravity": 0.1, "y_speed": 0,
      "fire_rate": 500, "reload_speed": 1000, "time_last_shot_fired": 0, "max_bullets": 3, "current_bullets": 3, "is_reloading": False,
     "time_start_reload": 0, "health": 100, "jump_count": 1 , "jump_force": -4, "time_last_jumped": 0, "bullet_speed": 9, "bullet_gravity": 0.2,
-     "bullet_damage": 50, "speed": 2.5, "choice": False, "lives": 5, "powerup": True, "max_health": 100, "deaths": 0, "bullet_bounce" : 2}
+     "bullet_damage": 50, "speed": 2.5, "choice": False, "lives": 5, "powerup": True, "max_health": 100, "deaths": 0, "bullet_bounce" : 2, "bullet_homing" : False}
 ]
 
 # control for only one joystick
@@ -144,10 +146,20 @@ levels = [
 # Bullet coordinates and speeds
 bullets = [
     {"x": 100, "y": 600, "x_speed": 7, "y_speed": -16, "gravity": 0.1, "bounce_count": 0, "active": 0, "bounce": 0.9, "colour": GREEN,
-     "damage": 10, "time_created": 3000}
+     "damage": 10, "time_created": 3000, "homing": False}
 ]
 
-powerups = [ "Bounce", "Bullet", "Reload", "Health", "Parkour", "Bullet_speed", "Bullet_strength"]
+powerups = [
+    #bounces
+    ["Bounce", "More bounces for bullets"],
+    ["Bullet", "Bigger magazine, less damage"],
+    ["Reload", "Double fire rate, double reload speed, 75% damage"],
+    ["Health", "Player Health increase, Player speed decrease"],
+    ["Parkour", "Increase player speed, 80% x health"],
+    ["Bullet_speed", "Increased bullet speed"],
+    ["Bullet_strength", "Increase bullet damage, half bullet speed, trajectory same"],
+    ["Homing", "Heat-seeking bullets, 75% bullet damage"]]
+#    [{"Bullet", "Reload", "Health", "Parkour", "Bullet_speed", "Bullet_strength", "Homing"]
 selected_powerups = []
 
 gravity = 0.1
@@ -160,6 +172,31 @@ gun_y = 500
 # print text function
 def print_text(text, x, y,  colour):
     screen.blit(font.render(text, True,colour), (x, y))
+
+
+def calculate_angle(x_speed, y_speed):
+    # Calculate angle with 0 degrees as north (upward)
+    angle_rad = math.atan2(x_speed, -y_speed)  # Note the order and negation
+    angle_deg = math.degrees(angle_rad)
+
+    # Ensure the angle is between 0 and 360 degrees
+    angle_deg = (angle_deg + 360) % 360
+    return angle_deg
+
+
+def update_velocity(current_x_speed, current_y_speed, new_angle_degrees):
+    # Calculate current speed
+    current_speed = math.sqrt(current_x_speed ** 2 + current_y_speed ** 2)
+
+    # Convert angle to radians
+    new_angle_radians = math.radians(new_angle_degrees)
+
+    # Calculate new x and y speeds
+    new_x_speed = current_speed * math.sin(new_angle_radians)
+    new_y_speed = -current_speed * math.cos(new_angle_radians)
+
+    return new_x_speed, new_y_speed
+
 
 stage_selection = True
 pygame.mixer.music.load('musicinstrumental.mp3')
@@ -182,10 +219,11 @@ while running:
         if not selected_powerups:
             selected_powerups = random.sample(powerups, 4)
             boxes = random.choice(levels)
-        print_text("UP: "+selected_powerups[0], 100, 100, WHITE)
-        print_text("DOWN: " + selected_powerups[1], 100, 200, WHITE)
-        print_text("LEFT: " + selected_powerups[2], 100, 300, WHITE)
-        print_text("RIGHT: " + selected_powerups[3], 100, 400, WHITE)
+        screen.blit(title_screen, (0, 0)) # plot background
+        print_text(f"UP:  {selected_powerups[0][0]}: {selected_powerups[0][1]}", 100, 100, YELLOW)
+        print_text(f"DOWN:  {selected_powerups[1][0]}: {selected_powerups[1][1]}", 100, 200, YELLOW)
+        print_text(f"LEFT:  {selected_powerups[2][0]}: {selected_powerups[2][1]}", 100, 300, YELLOW)
+        print_text(f"RIGHT:  {selected_powerups[3][0]}: {selected_powerups[3][1]}", 100, 400, YELLOW)
         # print_text("DOWN: Big Bullet: x2 damage, 1/2 bullet speed - same trajectory", 100, 200, WHITE)
         # print_text("LEFT: Super Sniper: x4 bullet speed", 100, 300, WHITE)
         # print_text("RIGHT: Parkour Pro: x2 speed inc jump, 20% less armour", 100, 400, WHITE)
@@ -215,19 +253,19 @@ while running:
 
                 if hat_x != 0 or hat_y != 0:
                     if hat_x == -1 and hat_y == 0:
-                        p["choice"] = selected_powerups[2]
+                        p["choice"] = selected_powerups[2][0]
                         p["powerup"] = False
                         chosen_count -= 1
                     if hat_x == 1 and hat_y == 0:
-                        p["choice"] = selected_powerups[3]
+                        p["choice"] = selected_powerups[3][0]
                         p["powerup"] = False
                         chosen_count -= 1
                     if hat_x == 0 and hat_y == 1:
-                        p["choice"] = selected_powerups[0]
+                        p["choice"] = selected_powerups[0][0]
                         p["powerup"] = False
                         chosen_count -= 1
                     if hat_x == 0 and hat_y == -1:
-                        p["choice"] = selected_powerups[1]
+                        p["choice"] = selected_powerups[1][0]
                         p["powerup"] = False
                         chosen_count -= 1
 
@@ -262,6 +300,9 @@ while running:
                     p["current_bullets"] = p["max_bullets"]
                 if p["choice"] == "Bounce":
                     p["bullet_bounce"] +=3
+                if p["choice"] == "Homing":
+                    p["bullet_homing"] = True
+                    p["bullet_damage"] *= 0.75
         pygame.display.flip()
         # await asyncio.sleep(0)
 
@@ -273,14 +314,46 @@ while running:
         # gravity
         for bullet in bullets:
 
-            bullet["y_speed"] = bullet["y_speed"] + bullet["gravity"]
+            if bullet["homing"] == False:
+                # regular bullets
+                bullet["y_speed"] = bullet["y_speed"] + bullet["gravity"]
 
-            # Move the bullet
-            bullet_x_old = bullet["x"]
-            bullet_y_old = bullet["y"]
+                # Move the bullet
+                bullet_x_old = bullet["x"]
+                bullet_y_old = bullet["y"]
 
-            bullet["x"] += bullet["x_speed"]
-            bullet["y"] += bullet["y_speed"]
+                bullet["x"] += bullet["x_speed"]
+                bullet["y"] += bullet["y_speed"]
+
+            else:
+                # homing bullets
+
+
+                # can't see other player?
+                bullet_angle = calculate_angle(bullet["x_speed"], bullet["y_speed"])
+
+                for p in players:
+                    player_angle = calculate_angle(p["x"]-bullet["x"], p["y"]-bullet["y"])
+                    if abs(bullet_angle - player_angle) <= 60:
+                        # NEED TO  CHECK FOR BOXES TBC
+
+                        bullet["x_speed"], bullet["y_speed"] = update_velocity(bullet["x_speed"], bullet["y_speed"], player_angle)
+
+
+
+                    else:
+                    # regular bullets
+                        bullet["y_speed"] = bullet["y_speed"] + bullet["gravity"]
+
+                        # Move the bullet
+                        bullet_x_old = bullet["x"]
+                        bullet_y_old = bullet["y"]
+
+                        bullet["x"] += bullet["x_speed"]
+                        bullet["y"] += bullet["y_speed"]
+
+                # gotchya!
+
 
             # NEED TO ADJUST FOR CENTRE OF BULLET
             for box in boxes:
@@ -380,7 +453,7 @@ while running:
 
                 bullets = bullets + [ {"x": p["x"] + 20 * p["gun_x"], "y": p["y"] + 20 * p["gun_y"], "x_speed": p["gun_x"] * p["bullet_speed"],
                                        "y_speed": p["gun_y"] * p["bullet_speed"], "gravity": p["bullet_gravity"], "bounce_count": p["bullet_bounce"], "active": 1,
-                     "bounce": 0.3, "colour": p["colour"], "damage": p["bullet_damage"], "time_created" : pygame.time.get_ticks()}
+                     "bounce": 0.3, "colour": p["colour"], "damage": p["bullet_damage"], "time_created" : pygame.time.get_ticks(), "homing" : p["bullet_homing"]}
                 ]
 
                 p["current_bullets"] -= 1
