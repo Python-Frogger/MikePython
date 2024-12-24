@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Xmas update">
+    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Renamed python file">
+      <change afterPath="$PROJECT_DIR$/SquareOff/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlinetest/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bullet1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/bullet1.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bulletbounce.py" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/bulletbounce.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/death1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/death1.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hurt1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/hurt1.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicelectro.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/musicelectro.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicinstrumental.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/musicinstrumental.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicrock.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/musicrock.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SquareOff/SquareOff.py" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +56,10 @@
     "Python.controller_game2.executor": "Run",
     "Python.jumpinggame.executor": "Run",
     "Python.leveleditor.executor": "Run",
+    "Python.main.executor": "Run",
     "Python.snake 2p.executor": "Run",
     "Python.sniperdog.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/james/PycharmProjects/MikePython/SquareOff",
@@ -159,7 +157,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734263329533</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Moved directory">
+      <option name="closed" value="true" />
+      <created>1734264119239</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734264119239</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Renamed python file">
+      <option name="closed" value="true" />
+      <created>1734265049209</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734265049209</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,7 +191,9 @@
     <MESSAGE value="Mike pc at dads" />
     <MESSAGE value="uploading first time" />
     <MESSAGE value="Xmas update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Xmas update" />
+    <MESSAGE value="Moved directory" />
+    <MESSAGE value="Renamed python file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed python file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
