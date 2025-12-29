@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Xmas update&#10;&#10;(cherry picked from commit a422bb4fcca4773f8ddae6e41e040590481df447)">
-      <changelist_data name="Mike" email="michaelcarrick1234@gmail.com" date="1734364920000" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="d80e30ab-b174-4754-b977-7f0b28e7c184" name="Changes" comment="Renamed python file">
+      <change afterPath="$PROJECT_DIR$/3d/fps_demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3d/splitscreen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3d/ursina demo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SquareOff/bullet1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SquareOff/death1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SquareOff/hurt1.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SquareOff/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/SquareOff/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SquareOff/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SquareOff/musicelectro.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SquareOff/musicinstrumental.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SquareOff/musicrock.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,32 +54,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Frogger game.executor": "Run",
-    "Python.Space Invaders.executor": "Run",
-    "Python.Sprite rotation.executor": "Run",
-    "Python.bulletbounce.executor": "Run",
-    "Python.controller axis.executor": "Run",
-    "Python.controller_game2.executor": "Run",
-    "Python.jumpinggame.executor": "Run",
-    "Python.leveleditor.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.scratch.executor": "Run",
-    "Python.snake 2p.executor": "Run",
-    "Python.sniperdog.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/james/PycharmProjects/MikePython/SquareOff",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.3dtest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3dtest2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Frogger game.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Space Invaders.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Sprite rotation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bulletbounce.executor&quot;: &quot;Run&quot;,
+    &quot;Python.controller axis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.controller_game2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fps_demo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.jumpinggame.executor&quot;: &quot;Run&quot;,
+    &quot;Python.leveleditor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.snake 2p.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sniperdog.executor&quot;: &quot;Run&quot;,
+    &quot;Python.splitscreen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ursina demo.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/james/PycharmProjects/MikePython/SquareOff&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Python"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\james\PycharmProjects\MikePython" />
@@ -82,7 +93,51 @@
       <recent name="C:\Users\james\PycharmProjects\MikePython\SquareOff" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="fps_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MikePython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3d" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3d/fps_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MikePython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SquareOff" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SquareOff/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MikePython" />
       <option name="ENV_FILES" value="" />
@@ -105,8 +160,56 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="splitscreen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MikePython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3d" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3d/splitscreen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ursina demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MikePython" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3d" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3d/ursina demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.ursina demo" />
+        <item itemvalue="Python.splitscreen" />
+        <item itemvalue="Python.fps_demo" />
         <item itemvalue="Python.scratch" />
       </list>
     </recent_temporary>
@@ -218,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735053218192</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Renamed python file">
+      <option name="closed" value="true" />
+      <created>1735059814314</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735059814314</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,9 +348,9 @@
     <MESSAGE value="uploading first time" />
     <MESSAGE value="Xmas update" />
     <MESSAGE value="Moved directory" />
-    <MESSAGE value="Renamed python file" />
     <MESSAGE value="Xmas update&#10;&#10;(cherry picked from commit a422bb4fcca4773f8ddae6e41e040590481df447)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Xmas update&#10;&#10;(cherry picked from commit a422bb4fcca4773f8ddae6e41e040590481df447)" />
+    <MESSAGE value="Renamed python file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed python file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

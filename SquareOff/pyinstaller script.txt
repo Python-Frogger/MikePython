@@ -1,0 +1,1 @@
+pyinstaller --noconfirm --clean --onedir --name SquareOff --windowed --add-data "assets;." main.py

@@ -1,3 +1,20 @@
+# needed for pyinstaller
+import os, sys
+
+base = os.path.dirname(sys.executable) if getattr(sys, "frozen", False) else os.path.dirname(__file__) or os.getcwd()
+candidates = (
+    base,
+    os.path.join(base, "assets"),
+    os.path.join(base, "_internal"),
+    os.path.join(base, "_internal", "assets"),
+)
+for d in candidates:
+    if os.path.isdir(d) and os.path.exists(os.path.join(d, "bullet1.ogg")):
+        os.chdir(d)
+        break
+else:
+    os.chdir(base)
+
 import pygame
 import math
 import random
@@ -49,12 +66,12 @@ PINK = (255, 192, 203)
 
 players = [
     # player 1
-    {"x": 150, "y": 450,  "gun_x": 1, "gun_y": 0, "colour": GREEN, "js_num": 0, "gravity": 0.1, "y_speed": 0,
+    {"x": 250, "y": 450,  "gun_x": 1, "gun_y": 0, "colour": GREEN, "js_num": 0, "gravity": 0.1, "y_speed": 0,
      "fire_rate": 500, "reload_speed": 1000, "time_last_shot_fired": 0, "max_bullets": 3, "current_bullets": 3, "is_reloading": False,
     "time_start_reload": 0, "health": 100, "jump_count": 1 , "jump_force": -4, "time_last_jumped": 0, "bullet_speed": 9, "bullet_gravity": 0.2,
      "bullet_damage": 50, "speed": 2.5, "choice": False, "lives": 5, "powerup": True, "max_health": 100, "deaths": 0, "bullet_bounce" : 2, "bullet_homing" : False},
     # player 2
-    {"x": 500, "y": 450,  "gun_x": -1, "gun_y": 0, "colour": BLUE, "js_num": 1, "gravity": 0.1, "y_speed": 0,
+    {"x": 750, "y": 450,  "gun_x": -1, "gun_y": 0, "colour": BLUE, "js_num": 1, "gravity": 0.1, "y_speed": 0,
      "fire_rate": 500, "reload_speed": 1000, "time_last_shot_fired": 0, "max_bullets": 3, "current_bullets": 3, "is_reloading": False,
     "time_start_reload": 0, "health": 100, "jump_count": 1 , "jump_force": -4, "time_last_jumped": 0, "bullet_speed": 9, "bullet_gravity": 0.2,
      "bullet_damage": 50, "speed": 2.5, "choice": False, "lives": 5, "powerup": True, "max_health": 100, "deaths": 0, "bullet_bounce" : 2, "bullet_homing" : False}
@@ -224,6 +241,8 @@ while running:
         print_text(f"DOWN:  {selected_powerups[1][0]}: {selected_powerups[1][1]}", 100, 200, YELLOW)
         print_text(f"LEFT:  {selected_powerups[2][0]}: {selected_powerups[2][1]}", 100, 300, YELLOW)
         print_text(f"RIGHT:  {selected_powerups[3][0]}: {selected_powerups[3][1]}", 100, 400, YELLOW)
+        print_text(f"Controls: A = Jump. Right trigger = Shoot. Left stick = move. Right stick = aim", 100, 500, WHITE)
+        print_text(f"D-pad = Select power up", 100, 600, WHITE)
         # print_text("DOWN: Big Bullet: x2 damage, 1/2 bullet speed - same trajectory", 100, 200, WHITE)
         # print_text("LEFT: Super Sniper: x4 bullet speed", 100, 300, WHITE)
         # print_text("RIGHT: Parkour Pro: x2 speed inc jump, 20% less armour", 100, 400, WHITE)
@@ -241,7 +260,7 @@ while running:
                     joystick = joysticks[p["js_num"]]
                     try:
                         hat_x, hat_y = joystick.get_hat(0)  # Get D-pad input
-                        print(f"Joystick {p['js_num']} D-pad: ({hat_x}, {hat_y})")
+                        #print(f"Joystick {p['js_num']} D-pad: ({hat_x}, {hat_y})")
                     except pygame.error:
                         print(f"Error reading hat for joystick {p['js_num']}")
                         hat_x, hat_y = 0, 0
@@ -550,9 +569,9 @@ while running:
                     q["current_bullets"] = q["max_bullets"]
                 stage_selection = True
                 chosen_count = 1
-                players[0]["x"] = 10
+                players[0]["x"] = 250
                 players[0]["y"] = 450
-                players[1]["x"] = 500
+                players[1]["x"] = 750
                 players[1]["y"] = 450
                 for b in bullets: # remove old bullets
                     b["active"] = False
